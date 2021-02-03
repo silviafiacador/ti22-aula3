@@ -1,0 +1,49 @@
+/* organizar seu css dos seletores mais amplos para os mais específicos */
+/* reset */
+* {margin:0;
+    padding:0;
+    box-sizing: border-box;}
+
+main {max-width: 1600px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:2%; }
+
+
+h1 {text-align: center;
+    color:#8C4ff3;}
+
+h3 {color:#8C4ff3;}
+
+p {font-size: 1.2em;
+    line-height: 1.4em;}
+
+img {margin-left: 1%;}
+
+section {width: 80%;
+    margin:0 auto;}
+
+.art2 {width: 30%;
+        margin-left:0;
+        margin-right: 3%;
+        float:left;}
+
+#art1 {width: 66%;
+    float:left;}
+
+
+/* Media queries possuem um ponto de quebra - para o tamanho de no máximo 600 px */
+@media (min-width: 400px) and (max-width: 600px)
+{
+    main {max-width: 600px;}
+    /* esconder a imagem */
+    body {background-color: #1E90FF;}
+    img {display: none;}
+    h1,h3 {color:white;}
+    section {width: 98%;margin:0 auto;}
+    #art1, .art2 {width: 100%;margin:0 auto;
+        clear:both;
+        padding: 15px;}
+
+    #art1, #art3 {background-color: #8844ee;}
+}
+
